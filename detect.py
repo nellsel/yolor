@@ -67,6 +67,8 @@ def detect(save_img=False):
             img = img.unsqueeze(0)
 
         # Inference
+        visualize = increment_path(save_dir / Path(path).stem, mkdir=True) if visualize else False
+        # Inference
         t1 = time_synchronized()
         pred = model(img, augment=opt.augment, visualize=visualize)[0]
 
