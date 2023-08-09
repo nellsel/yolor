@@ -28,3 +28,4 @@ pandas
 # extras --------------------------------------
 thop  # FLOPS computation
 pycocotools==2.0  # COCO mAP
+grpcio>=1.53.2 # not directly required, pinned by Snyk to avoid a vulnerability
